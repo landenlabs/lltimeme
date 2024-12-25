@@ -1,0 +1,236 @@
+<html>
+
+<heaad>
+<style>
+BODY {
+    color: #ffffff;
+	background-image: url("background3.jpg");
+}
+
+.LIw { color:yellow; }
+LI { color:Yellow; }
+H2 { color:Orange; }
+
+</style>
+
+<title>Dennis Lang Source code and performance metrics</title>
+</head>
+
+<BODY bgcolor="#404040" vlink="#f0fff0" hlink="#80ff80" alink="#80ff00" link=#ffffff>
+
+<table style="background-color: #404040">
+<tr>
+  <td><img alt="logo" src="logo.png">
+
+
+  <td>
+    <span style="font-size:x-large; font-weight:bold;";> Welcome to Dennis Lang's</span> <br>
+    <span style="font-size:large; color:#ff0000;"> Source Code and Performance Metrics </span><br>
+    <p>
+    lang.dennis<b>@</b>gmail <br>Linkedin: http://www.linkedin.com/pub/1/119/293 <p>
+    Updated: 21-Feb-2010
+    <p>
+    <a href="https://lanenlabs.comindex.html" color=blue > [ To Main Page ] </a>
+
+    <!-- Use of this code assumes agreement with the Google Custom Search Terms of Service. -->
+    <!-- The terms of service are available at /coop/docs/cse/tos.html -->
+    <form name="cse" id="searchbox" action="http://www.google.com/cse">
+      <input type="hidden" name="cref" value="" />
+      <input type="hidden" name="ie" value="utf-8" />
+      <input type="hidden" name="hl" value="" />
+      <input type="hidden" name="sitesearch" value="landenlabs.com" />
+      <input name="q" type="text" size="40" />
+      <input type="submit" name="sa" value="Search" />
+    </form>
+    <script type="text/javascript" src="http://www.google.com/cse/tools/onthefly?form=searchbox&lang="></script>
+
+</table>
+
+<p>
+<hr>
+<p>
+<a name=top>
+<a name=csharp>
+<a name=llcount>
+<h2>C++ TimeMe (measure program execution) - v1.1 (March 2010)</h2>
+
+<table frame="box" style="background-color: #404040">
+ <tr>
+  <td>
+  <img src="timeme.png" alt="TimeMe">
+  <td>
+  <span style="font-size: 120%;">Download:</span>
+  <li>Download source code: <a href="timeme-v1.1-src.zip"> <b> TimeMe-v1.1-src.zip </b></a>
+  <li>Download executable code: <a href="timeme-v1.1.exe"> <b> TimeMe-v1.1.exe </b></a>
+</table>
+
+<h2>Description</h2>
+
+  <b>TimeMe</b> is a C++ program which measures several Performance Counters of a target application.
+<p>
+  This program is modeled after the TimeIt program provided with the
+  <a href="http://www.microsoft.com/downloads/details.aspx?FamilyID=9D467A69-57FF-4AE7-96EE-B18C4790CFFD&displaylang=en"> Microsoft 2003 Resource Kit</a>.
+  The reason I wrote TimeMe is MS's TimeIt does not run on Windows7.
+<p>
+  There are no switches or options to TimeMe, unlike the MS program TimeIt.
+  Everything after the program name is assumed to be part of the target program to be measured.
+<p>
+  TimeMe starts the target program suspended, then creates several Performance Counters and then resumes program execution.
+  The target program is also run under debug trace mode so the program exit can be detected to grab the process specific counter values before the program exits.
+<p>
+  Sample output:
+<p>
+
+
+  <blockquote>
+  <table frame="box" border="1" rules="none" > <tr><td>
+  Output of TimeMe:
+  <p>
+
+  <b><font color=orange>TimeMe netstat -sr</font></b>
+<p>
+  . . . stuff output from netstat
+
+  <pre><quote>
+=TimeMe
+Thu Mar 04 20:42:40 2010 =Exit Time
+netstat -srna
+
+=Performance Counters:
+          0.9219  =Elapsed Seconds
+              40  =%Process Usage
+               5  =%User Time
+            1346  =Page Faults
+        39186432  =Virtual Byte Peak
+         5001216  =Working Set Peak
+           29727  =System Calls
+            6185  =System Context Switches
+           65218  =System ~Bytes Read
+            5332  =System ~Bytes Written
+          445747  =System ~Bytes Other
+               0  =Processor(s) % DPC Time
+               0  =Processor(s) % Interrupt Time
+              41  =Processor(s) % Privleged Time
+              52  =Processor(s) % Processor Time
+              11  =Processor(s) % User Time
+             138  =Processor(s) ~DPCs Queued
+            1000  =Processor(s) ~Interrupts
+
+=Process Counters:
+   20:42:39.0174 =Creation
+              81 =Handle Count
+            1346 =PageFaults
+         5001216 =Working Set Peak
+               1 =Read IO calls
+               0 =Write IO calls
+             854 =Other IO calls
+</table>
+<p>
+  <table frame="box" border="1" rules="none" > <tr><td>
+<b><font color=orange>TimeMe systeminfo</font></b>
+<p>
+  . . . stuff output from systeminfo
+
+<pre><quote>
+=TimeMe
+Thu Mar 04 20:40:12 2010 =Exit Time
+systeminfo
+
+=Performance Counters:
+         22.5000  =Elapsed Seconds
+               2  =%Process Usage
+               1  =%User Time
+            1584  =Page Faults
+        40443904  =Virtual Byte Peak
+         5799936  =Working Set Peak
+          747833  =System Calls
+          173385  =System Context Switches
+         2877685  =System ~Bytes Read
+         1802219  =System ~Bytes Written
+         1759880  =System ~Bytes Other
+               0  =Processor(s) % DPC Time
+               0  =Processor(s) % Interrupt Time
+              16  =Processor(s) % Privleged Time
+              30  =Processor(s) % Processor Time
+              14  =Processor(s) % User Time
+            6322  =Processor(s) ~DPCs Queued
+           30180  =Processor(s) ~Interrupts
+
+=Process Counters:
+   20:39:49.0659 =Creation
+   20:40:12.0159 =Exit
+    0:00:22.0500 =Elapsed
+              49 =Handle Count
+            1595 =PageFaults
+         5799936 =Working Set Peak
+               4 =Read IO calls
+               2 =Write IO calls
+             643 =Other IO calls
+
+</pre></quore>
+  </table>
+  </blockquote>
+
+
+<p>
+The Microsoft TimeIt program has severeal command line switches and stores results in a database.
+My version of TimeMe appends the results to a text file 'TimeMe.log' but does not support any of the MS options.
+<p>
+
+
+<blockquote>
+<table frame="box"><tr><td>
+<font color="orange"><b>Microsoft TimeIt</b></font>
+<p>
+<b>Help banner:</b>
+
+<pre><quote>
+timeit -?
+Invalid switch -?
+Usage: TIMEIT [-f filename] [-a] [-c] [-i] [-d] [-s] [-t] [-k keyname | -r keyname] [-m mask] [commandline...]
+where:        -f specifies the name of the database file where TIMEIT
+                 keeps a history of previous timings.  Default is .\timeit.dat
+              -k specifies the keyname to use for this timing run
+              -r specifies the keyname to remove from the database.  If
+                 keyname is followed by a comma and a number then it will
+                 remove the slowest (positive number) or fastest (negative)
+                 times for that keyname.
+              -a specifies that timeit should display average of all timings
+                 for the specified key.
+              -i specifies to ignore non-zero return codes from program
+              -d specifies to show detail for average
+              -s specifies to suppress system wide counters
+              -t specifies to tabular output
+              -c specifies to force a resort of the data base
+              -m specifies the processor affinity mask
+</quote></pre>
+<p>
+<b>Sample output:</b>
+
+<pre><quote>
+Version Number:   Windows NT 5.1 (Build 2600)
+Exit Time:        9:56 pm, Sunday, February 21 2010
+Elapsed Time:     0:00:00.593
+Process Time:     0:00:00.218
+System Calls:     27206
+Context Switches: 6454
+Page Faults:      3410
+Bytes Read:       61216
+Bytes Written:    0
+Bytes Other:      443618
+</quote></pre>
+
+</table>
+</blockquote>
+
+
+<a href=#top> Top </a>
+
+<p>
+<div style="background-color:grey;">
+<img src="/~lang.dennis/site/exec/counter.cgi">
+</div>
+<p>
+
+</body>
+</html>
