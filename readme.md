@@ -4,8 +4,8 @@
 C++ TimeMe (measure program execution) - v1.1 (March 2010)
 ----------------------------------------------------------
 
-![TimeMe](doc-info/lltimeme.png)
-<img src="doc-info/lltimeme.png">
+![TimeMe](./doc-info/timeme.png)
+<img src="./doc-info/timeme.png">
 
 Description
 -----------
