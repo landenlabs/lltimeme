@@ -1,11 +1,10 @@
 
 * * *
 
-C++ TimeMe (measure program execution) - v1.1 (March 2010)
+C++ TimeMe (measure program execution) - v1.4 (Dec 2024)
 ----------------------------------------------------------
 
 ![TimeMe](./doc-info/timeme.png)
-<img src="./doc-info/timeme.png">
 
 Description
 -----------

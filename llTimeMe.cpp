@@ -156,7 +156,7 @@ int _tmain( int argc, TCHAR *argv[] )
 {
     if (argc == 1)
     {
-        #define _VERSION "v1.3"
+        #define _VERSION "v1.4"
         char sUsage[] =
             "\n"
             "llTimeMe  " _VERSION " - " __DATE__ "\n"
