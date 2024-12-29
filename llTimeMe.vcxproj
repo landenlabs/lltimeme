@@ -169,6 +169,10 @@
   <ItemGroup>
     <ClInclude Include="PerfCounters.h" />
     <ClInclude Include="TimeProcess.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="llTimeMe.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
