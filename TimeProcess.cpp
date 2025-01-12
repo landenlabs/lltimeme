@@ -37,13 +37,15 @@ TimeProcess::~TimeProcess()
 }
 
 //-----------------------------------------------------------------------------
-void TimeProcess::Collect()
+bool TimeProcess::Collect()
 {
-    PerfCounters::Collect();
-
-    size_t cnt = m_pCounters.size();
-    for (size_t idx = 0; idx < cnt; idx++)
-        m_pCounters[idx]->Collect();
+    bool ok;
+    if (ok = PerfCounters::Collect()) {
+        size_t cnt = m_pCounters.size();
+        for (size_t idx = 0; idx < cnt; idx++)
+            m_pCounters[idx]->Collect();
+    }
+    return ok;
 }
 
 //-----------------------------------------------------------------------------

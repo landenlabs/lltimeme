@@ -35,6 +35,7 @@ public:
         }
     }
 
+
     PerfCounters m_counter;
     double       m_total;
     size_t       m_collectionCount;
@@ -47,7 +48,7 @@ public:
     TimeProcess(wchar_t* names[], wchar_t* procName);
     ~TimeProcess();
 
-    void Collect();
+    bool Collect();
     void Display(FILE* out, wchar_t* fmt[]);
 
     std::vector<PerfItem*> m_pCounters;

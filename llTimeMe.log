@@ -1,0 +1,205 @@
+
+=llTimeMe
+Sat Jan 11 20:09:57 2025 =Exit Time
+cmd /c time /t
+
+=Performance Counters:
+      15524.7141  =Elapsed Seconds
+               0  =%Process Usage
+               0  =%User Time
+               0  =Page Faults
+   2203508183040  =Virtual Byte Peak
+        38645760  =Working Set Peak
+        28051729  =System Calls
+         3295317  =System Context Switches
+       109864369  =System ~Bytes Read
+        82946989  =System ~Bytes Written
+        23332895  =System ~Bytes Other
+               0  =Processor(s) % DPC Time
+               0  =Processor(s) % Interrupt Time
+               1  =Processor(s) % Privleged Time
+               1  =Processor(s) % Processor Time
+               0  =Processor(s) % User Time
+          223369  =Processor(s) ~DPCs Queued
+         2493425  =Processor(s) ~Interrupts
+
+=Process Counters:
+             110 =Handle Count
+            2244 =PageFaults
+         7606272 =Working Set Peak
+               8 =Read IO calls
+               0 =Write IO calls
+             480 =Other IO calls
+
+=llTimeMe
+Sat Jan 11 20:10:22 2025 =Exit Time
+cmd /c time /t
+
+=Performance Counters:
+      15782.6975  =Elapsed Seconds
+               0  =%Process Usage
+               0  =%User Time
+               0  =Page Faults
+   2203508183040  =Virtual Byte Peak
+        38645760  =Working Set Peak
+          434319  =System Calls
+           47711  =System Context Switches
+         2565064  =System ~Bytes Read
+          367805  =System ~Bytes Written
+          105085  =System ~Bytes Other
+               0  =Processor(s) % DPC Time
+               0  =Processor(s) % Interrupt Time
+               0  =Processor(s) % Privleged Time
+               0  =Processor(s) % Processor Time
+               0  =Processor(s) % User Time
+            3059  =Processor(s) ~DPCs Queued
+           30323  =Processor(s) ~Interrupts
+
+=Process Counters:
+             110 =Handle Count
+            2239 =PageFaults
+         7602176 =Working Set Peak
+               8 =Read IO calls
+               0 =Write IO calls
+             480 =Other IO calls
+
+=llTimeMe
+Sat Jan 11 20:12:07 2025 =Exit Time
+cmd /c time /t
+
+=Performance Counters:
+      15887.5197  =Elapsed Seconds
+               0  =%Process Usage
+               0  =%User Time
+               0  =Page Faults
+   2203508183040  =Virtual Byte Peak
+        38645760  =Working Set Peak
+           24663  =System Calls
+            5657  =System Context Switches
+          450699  =System ~Bytes Read
+           52780  =System ~Bytes Written
+           53306  =System ~Bytes Other
+               0  =Processor(s) % DPC Time
+               0  =Processor(s) % Interrupt Time
+               2  =Processor(s) % Privleged Time
+               6  =Processor(s) % Processor Time
+               3  =Processor(s) % User Time
+             481  =Processor(s) ~DPCs Queued
+            2848  =Processor(s) ~Interrupts
+
+=Process Counters:
+             110 =Handle Count
+            2244 =PageFaults
+         7614464 =Working Set Peak
+               8 =Read IO calls
+               0 =Write IO calls
+             480 =Other IO calls
+
+=llTimeMe
+Sat Jan 11 20:23:08 2025 =Exit Time
+cmd /c time /t
+
+=Performance Counters:
+
+=Process Counters:
+               0 =Handle Count
+           14083 =PageFaults
+         7962624 =Working Set Peak
+             136 =Read IO calls
+               0 =Write IO calls
+            4610 =Other IO calls
+
+=llTimeMe
+Sat Jan 11 20:28:46 2025 =Exit Time
+cmd /c time /t
+
+=Performance Counters:
+      16886.8259  =Elapsed Seconds
+               0  =%Process Usage
+               0  =%User Time
+               0  =Page Faults
+   2203508183040  =Virtual Byte Peak
+        38645760  =Working Set Peak
+          278235  =System Calls
+           66602  =System Context Switches
+          613391  =System ~Bytes Read
+           91705  =System ~Bytes Written
+         1232947  =System ~Bytes Other
+               0  =Processor(s) % DPC Time
+               0  =Processor(s) % Interrupt Time
+               0  =Processor(s) % Privleged Time
+               3  =Processor(s) % Processor Time
+               0  =Processor(s) % User Time
+            3964  =Processor(s) ~DPCs Queued
+           44120  =Processor(s) ~Interrupts
+
+=Process Counters:
+               0 =Handle Count
+           14545 =PageFaults
+         7847936 =Working Set Peak
+             136 =Read IO calls
+               0 =Write IO calls
+            4699 =Other IO calls
+
+=llTimeMe
+Sat Jan 11 20:32:24 2025 =Exit Time
+cmd /c time /t
+
+=Performance Counters:
+      17104.4262  =Elapsed Seconds
+               0  =%Process Usage
+               0  =%User Time
+               0  =Page Faults
+   2203508183040  =Virtual Byte Peak
+        38645760  =Working Set Peak
+          562133  =System Calls
+          141285  =System Context Switches
+         7454993  =System ~Bytes Read
+         1656392  =System ~Bytes Written
+         1742366  =System ~Bytes Other
+               0  =Processor(s) % DPC Time
+               0  =Processor(s) % Interrupt Time
+               0  =Processor(s) % Privleged Time
+               0  =Processor(s) % User Time
+            7710  =Processor(s) ~DPCs Queued
+          146286  =Processor(s) ~Interrupts
+
+=Process Counters:
+               0 =Handle Count
+           14082 =PageFaults
+         7966720 =Working Set Peak
+             136 =Read IO calls
+               0 =Write IO calls
+            4610 =Other IO calls
+
+=llTimeMe
+Sat Jan 11 20:32:57 2025 =Exit Time
+netstat -an
+
+=Performance Counters:
+          0.4246  =Elapsed Seconds
+               0  =%Process Usage
+               0  =%User Time
+             840  =Page Faults
+   2203371368448  =Virtual Byte Peak
+         4382720  =Working Set Peak
+           90466  =System Calls
+           52338  =System Context Switches
+           12941  =System ~Bytes Read
+           11904  =System ~Bytes Written
+          536185  =System ~Bytes Other
+               0  =Processor(s) % DPC Time
+               0  =Processor(s) % Interrupt Time
+               0  =Processor(s) % Privleged Time
+              25  =Processor(s) % Processor Time
+               0  =Processor(s) % User Time
+             608  =Processor(s) ~DPCs Queued
+           26952  =Processor(s) ~Interrupts
+
+=Process Counters:
+               0 =Handle Count
+            1204 =PageFaults
+         4440064 =Working Set Peak
+               0 =Read IO calls
+               0 =Write IO calls
+            7996 =Other IO calls

@@ -173,6 +173,7 @@ int _tmain( int argc, TCHAR *argv[] )
     // Initialize Performance Counters
     if (false == PerfCounters::Initialize())
     {
+        fprintf(stderr, "Failed to initialize performance counters\n");
         return -2;
     }
 
@@ -197,8 +198,8 @@ int _tmain( int argc, TCHAR *argv[] )
     // Start the child process.
     // Start suspended so counters can be attached and use debug to detected program exit.
     // DWORD crFlags = CREATE_SUSPENDED | DEBUG_ONLY_THIS_PROCESS;
-    DWORD crFlags = CREATE_SUSPENDED | DEBUG_PROCESS;
-    // DWORD crFlags = CREATE_SUSPENDED;
+    // DWORD crFlags = CREATE_SUSPENDED | DEBUG_PROCESS;
+    DWORD crFlags = CREATE_SUSPENDED;
     
     IO_COUNTERS ioCounters;
     bool gotIoCounters = false;
@@ -235,15 +236,28 @@ int _tmain( int argc, TCHAR *argv[] )
         &pi )           // Pointer to PROCESS_INFORMATION structure
             ) 
     {
-        wprintf(L"[Error %d] - Failed to start process %s\n", GetLastError(), cmdBuf );
+        fwprintf(stderr, L"[Error %d] - Failed to start process %s\n", GetLastError(), cmdBuf );
         PerfCounters::Close();
         return GetLastError();
     }
+    else {
+        //fwprintf(stderr, L"Started %s\n", cmdBuf);
+    }
 
     // Create counters and start program
-    GetProcessImageFileName(pi.hProcess, procName, sizeof(procName));
+    DWORD gotLen = GetProcessImageFileName(pi.hProcess, procName, sizeof(procName));
+    if (gotLen == 0) {
+        fwprintf(stderr, L"[Error %d] - Failed to start process %s\n", GetLastError(), cmdBuf);
+        return GetLastError();
+    }
     ProcName(procName, procName, ARRAYSIZE(procName));
     TimeProcess timeProcess(PerfCounterNames, procName);
+
+    if (timeProcess.Collect()) {
+        fprintf(stderr, "Counters before starting command\n");
+        timeProcess.Display(stderr, PerfFmts);
+    }
+
     ResumeThread(pi.hThread);
 
     if ((crFlags & (DEBUG_PROCESS | DEBUG_ONLY_THIS_PROCESS)) != 0)

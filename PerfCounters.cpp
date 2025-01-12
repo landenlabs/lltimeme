@@ -33,7 +33,7 @@ PerfCounters::PerfCounters(TCHAR* counterName)
     m_status = PdhAddCounter(m_sQuery, counterName, 0, &m_counter);
     if (m_status != ERROR_SUCCESS) 
     {
-        _tprintf(_T("\nPdhAddCounter %s failed with status 0x%x."), m_cmd, m_status);
+        _ftprintf(stderr, _T("\nPdhAddCounter %s failed with status 0x%x."), m_cmd, m_status);
     }
 
     m_isPerSec = (_tcsstr(counterName, _T("/sec")) != NULL);
@@ -82,7 +82,7 @@ bool PerfCounters::Initialize()
     PDH_STATUS Status = PdhOpenQuery(NULL, NULL, &m_sQuery);
     if (Status != ERROR_SUCCESS) 
     {
-       _tprintf(_T("\nPdhOpenQuery failed with status 0x%x."), Status);
+       _ftprintf(stderr, _T("\nPdhOpenQuery failed with status 0x%x."), Status);
        return false;
     }
     return true;
@@ -103,7 +103,7 @@ bool PerfCounters::Collect()
     PDH_STATUS Status = PdhCollectQueryData(m_sQuery);
     if (Status != ERROR_SUCCESS) 
     {
-        _tprintf(_T("\nPdhCollectQueryData failed with 0x%x.\n"), Status);
+        fprintf(stderr, "\nPdhCollectQueryData failed with 0x%x.\n", Status);
         return false;
     }
 
