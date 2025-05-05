@@ -2,7 +2,7 @@
 // llTimeMe v1.1  March 2010
 //
 // Author: Dennis Lang 2010
-// https://lanenlabs.com
+// https://landenlabs.com
 //
 // llTimeMe program measures program execution statistics.
 // Program is modeled after Microsoft's  Resource Kit 2003 TimeIt program which 
@@ -161,7 +161,7 @@ int _tmain( int argc, TCHAR *argv[] )
             "\n"
             "llTimeMe  " _VERSION " - " __DATE__ "\n"
             "By: Dennis Lang\n"
-            "https://lanenlabs.com\n"
+            "https://landenlabs.com\n"
             "\n"
             "Measure Program Execution\n"
             "Usage: %S [programToTime] [programArgs]...\n";
