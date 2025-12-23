@@ -203,3 +203,38 @@ netstat -an
                0 =Read IO calls
                0 =Write IO calls
             7996 =Other IO calls
+
+=llTimeMe
+Sat Dec 13 11:31:20 2025 =Exit Time
+ld
+
+=Performance Counters:
+          1.0693  =Elapsed Seconds
+               0  =%Process Usage
+               0  =%User Time
+            1208  =Page Faults
+      4397809664  =Virtual Byte Peak
+         6209536  =Working Set Peak
+           17833  =System Calls
+            9529  =System Context Switches
+         3484175  =System ~Bytes Read
+            7905  =System ~Bytes Written
+          113706  =System ~Bytes Other
+               0  =Processor(s) % DPC Time
+               0  =Processor(s) % Interrupt Time
+              12  =Processor(s) % Privleged Time
+              25  =Processor(s) % Processor Time
+              12  =Processor(s) % User Time
+            1148  =Processor(s) ~DPCs Queued
+            5963  =Processor(s) ~Interrupts
+
+=Process Counters:
+   11:31:18.0998 =Creation
+   11:31:20.0082 =Exit
+    0:00:01.0084 =Elapsed
+               0 =Handle Count
+            1657 =PageFaults
+         6557696 =Working Set Peak
+               1 =Read IO calls
+             903 =Write IO calls
+             263 =Other IO calls
