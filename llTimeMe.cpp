@@ -61,7 +61,7 @@
 //     Bytes Other:        650072
 //
 
-#define VERSION "v6.05.01"
+#define VERSION "v6.05.04"
 
 #include <windows.h>
 #include <stdio.h>
