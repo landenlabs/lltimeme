@@ -20,7 +20,7 @@
 
 #pragma comment(lib, "pdh.lib")
 
-#include "PerfCounters.h"
+#include "perfcounters.h"
 
 HQUERY PerfCounters::m_sQuery;
 const double PerfCounters::m_sNoDouble = 0;

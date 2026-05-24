@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Source Files">
@@ -11,27 +11,27 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="debugger.cpp">
+    <ClCompile Include="..\lltimeme\debugger.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="PerfCounters.cpp">
+    <ClCompile Include="..\lltimeme\perfcounters.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="PromptPerfCounters.cpp">
+    <ClCompile Include="..\lltimeme\promptperfcounters.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="llTimeMe.cpp">
+    <ClCompile Include="..\lltimeme\lltimeme.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="TimeProcess.cpp">
+    <ClCompile Include="..\lltimeme\timeprocess.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="PerfCounters.h">
+    <ClInclude Include="..\lltimeme\perfcounters.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="TimeProcess.h">
+    <ClInclude Include="..\lltimeme\timeprocess.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

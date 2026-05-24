@@ -1,6 +1,6 @@
 
 =llTimeMe
-Sat Jan 11 20:09:57 2025 =Exit Time
+Sat Jan 11 20:09:57 2026 =Exit Time
 cmd /c time /t
 
 =Performance Counters:
@@ -32,7 +32,7 @@ cmd /c time /t
              480 =Other IO calls
 
 =llTimeMe
-Sat Jan 11 20:10:22 2025 =Exit Time
+Sat Jan 11 20:10:22 2026 =Exit Time
 cmd /c time /t
 
 =Performance Counters:
@@ -64,7 +64,7 @@ cmd /c time /t
              480 =Other IO calls
 
 =llTimeMe
-Sat Jan 11 20:12:07 2025 =Exit Time
+Sat Jan 11 20:12:07 2026 =Exit Time
 cmd /c time /t
 
 =Performance Counters:
@@ -96,7 +96,7 @@ cmd /c time /t
              480 =Other IO calls
 
 =llTimeMe
-Sat Jan 11 20:23:08 2025 =Exit Time
+Sat Jan 11 20:23:08 2026 =Exit Time
 cmd /c time /t
 
 =Performance Counters:
@@ -110,7 +110,7 @@ cmd /c time /t
             4610 =Other IO calls
 
 =llTimeMe
-Sat Jan 11 20:28:46 2025 =Exit Time
+Sat Jan 11 20:28:46 2026 =Exit Time
 cmd /c time /t
 
 =Performance Counters:
@@ -142,7 +142,7 @@ cmd /c time /t
             4699 =Other IO calls
 
 =llTimeMe
-Sat Jan 11 20:32:24 2025 =Exit Time
+Sat Jan 11 20:32:24 2026 =Exit Time
 cmd /c time /t
 
 =Performance Counters:
@@ -173,7 +173,7 @@ cmd /c time /t
             4610 =Other IO calls
 
 =llTimeMe
-Sat Jan 11 20:32:57 2025 =Exit Time
+Sat Jan 11 20:32:57 2026 =Exit Time
 netstat -an
 
 =Performance Counters:
@@ -205,7 +205,7 @@ netstat -an
             7996 =Other IO calls
 
 =llTimeMe
-Sat Dec 13 11:31:20 2025 =Exit Time
+Sat Dec 13 11:31:20 2026 =Exit Time
 ld
 
 =Performance Counters:
@@ -238,3 +238,34 @@ ld
                1 =Read IO calls
              903 =Write IO calls
              263 =Other IO calls
+
+=llTimeMe
+Sun May 24 16:13:39 2026 =Exit Time
+ld
+
+=Performance Counters:
+          0.4196  =Elapsed Seconds
+             100  =%Process Usage
+               0  =%User Time
+            2307  =Page Faults
+      4403519488  =Virtual Byte Peak
+         8122368  =Working Set Peak
+            7539  =System Calls
+            3458  =System Context Switches
+            2914  =System ~Bytes Read
+            5413  =System ~Bytes Written
+           45256  =System ~Bytes Other
+               0  =Processor(s) % DPC Time
+               0  =Processor(s) % Interrupt Time
+              13  =Processor(s) % Privleged Time
+               7  =Processor(s) % User Time
+             107  =Processor(s) ~DPCs Queued
+            2284  =Processor(s) ~Interrupts
+
+=Process Counters:
+               0 =Handle Count
+            2293 =PageFaults
+         9093120 =Working Set Peak
+               0 =Read IO calls
+             598 =Write IO calls
+             352 =Other IO calls

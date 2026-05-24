@@ -1,7 +1,7 @@
-<table border="0">
+﻿<table border="0">
   <tr>
     <td>
-      <!-- VERSION -->v6.05.24<br>
+      <!-- VERSION -->v6.05.23<br>
       <!-- DATE -->24-May-2026<br>
       Windows<br>
       <a href="https://landenlabs.com">Home</a>
@@ -26,10 +26,10 @@ Visit home website
 
  
 
-C++ TimeMe (measure program execution) - v1.4 (Dec 2024)
+C++ TimeMe (measure program execution) - v1.4 (Dec 2026)
 ----------------------------------------------------------
 
-![TimeMe](./doc-info/timeme.png)
+![TimeMe](./doc-info/lltimeme.png)
 
 Description
 -----------

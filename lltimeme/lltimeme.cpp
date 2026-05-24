@@ -71,8 +71,8 @@
 #include <psapi.h>
 #pragma comment( lib, "psapi.lib" )
 
-#include "PerfCounters.h"
-#include "TimeProcess.h"
+#include "perfcounters.h"
+#include "timeprocess.h"
 
 extern void EnterDebugLoop(const LPDEBUG_EVENT DebugEv);
 DEBUG_EVENT debugEv;
@@ -131,7 +131,7 @@ static TCHAR* ProcName(TCHAR* pCmd, TCHAR* outProcName, int outSize)
 
     TCHAR* pDst = outProcName;
     TCHAR* pLastDot = _tcsrchr(pCmd, _T('.')); 
-    TCHAR* pLastSlash = _tcsrchr(pCmd, _T('\\')); 
+    TCHAR* pLastSlash = _tcsrchr(pCmd, _T('\\'));
 
     if (pLastSlash != NULL)
         pCmd = ++pLastSlash;

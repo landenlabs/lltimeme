@@ -7,7 +7,7 @@
 // Simple wrapper classes to manage performance counters.
 //
 
-#include "TimeProcess.h"
+#include "timeprocess.h"
 #include <stdarg.h>
 
              

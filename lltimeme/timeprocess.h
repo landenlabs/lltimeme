@@ -9,7 +9,7 @@
 
 #pragma once
 
-#include "PerfCounters.h"
+#include "perfcounters.h"
 #include <vector>
 
 extern void Printf2(FILE* log, wchar_t* wFmt, ...);
