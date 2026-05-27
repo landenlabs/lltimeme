@@ -19,16 +19,17 @@ jobs:
       - name: Stage artifact
         shell: pwsh
         run: |
-          $exe = Get-ChildItem -Recurse -Filter "TimeIt.exe" |
+          $exe = Get-ChildItem -Recurse -Filter "lltimeme.exe" |
                  Where-Object { $_.DirectoryName -match "Release" } |
                  Select-Object -First 1
-          Copy-Item $exe.FullName "TimeIt.exe"
+          if (-not $exe) { throw "lltimeme.exe not found under Release/" }
+          Copy-Item $exe.FullName "lltimeme.exe"
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: windows-binary
-          path: TimeIt.exe
+          path: lltimeme.exe
 
   release:
     needs: [build-windows]
@@ -47,7 +48,7 @@ jobs:
           name: ${{ github.ref_name }}
           prerelease: false
           files: |
-            windows-binary/TimeIt.exe
+            windows-binary/lltimeme.exe
 
       - name: Release (latest)
         if: github.ref == 'refs/heads/main'
@@ -56,4 +57,4 @@ jobs:
           tag_name: latest
           name: Latest Build
           prerelease: true
-          files: windows-binary/TimeIt.exe
+          files: windows-binary/lltimeme.exe
